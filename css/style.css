@@ -1,0 +1,119 @@
+/*~~~~~~~~~~~~~~~
+    RESET
+~~~~~~~~~~~~~~~*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*~~~~~~~~~~~~~~~
+    DEBUGG
+~~~~~~~~~~~~~~~*/
+.db .board {
+    background-color: lightgreen;
+    max-width: 700px;
+    height: 600px;
+}
+
+.db .extraction {
+    background-color: lightblue;
+    max-width: 150px;
+    height: 200px;
+}
+
+.db .awards {
+    background-color: red;
+    max-width: 150px;
+    height: 100px;
+}
+
+/*~~~~~~~~~~~~~~~
+    TIPOGRAPHY
+~~~~~~~~~~~~~~~*/
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+/*~~~~~~~~~~~~~~~
+    BUTTONS
+~~~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~~~~
+    GENERAL
+~~~~~~~~~~~~~~~*/
+.container {
+    max-width: 900px;   
+    margin: 0 auto; 
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*~~~~~~~~~~~~~~~
+GAME-SETTING
+~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~
+BOARD
+~~~~~~~~~~~~~~~*/
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell {
+    background-color: red;
+    text-align: center;
+    align-content: center;
+    width: calc(100% / 11);
+    height: calc(100% / 11);
+    margin: 3px;
+}
+
+/*~~~~~~~~~~~~~~~
+EXTRACTION
+~~~~~~~~~~~~~~~*/
+.extraction {
+    text-align: center;
+}
+
+.last-extraction {
+    padding: 30px;
+    font-size: 32px;
+}
+
+
+/*~~~~~~~~~~~~~~~
+AWARDS
+~~~~~~~~~~~~~~~*/
+.awards {
+    margin-top: 50px;
+}
+
+.awards > div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*~~~~~~~~~~~~~~~
+GAME-RESET
+~~~~~~~~~~~~~~~*/
