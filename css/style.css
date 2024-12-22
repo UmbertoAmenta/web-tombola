@@ -11,7 +11,7 @@
 /*~~~~~~~~~~~~~~~
     DEBUGG
 ~~~~~~~~~~~~~~~*/
-.db .board {
+/* .db .board {
     background-color: lightgreen;
     max-width: 700px;
     height: 600px;
@@ -27,12 +27,13 @@
     background-color: red;
     max-width: 150px;
     height: 100px;
-}
+} */
 
 /*~~~~~~~~~~~~~~~
     TIPOGRAPHY
 ~~~~~~~~~~~~~~~*/
 h1 {
+    color: gold;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -42,14 +43,30 @@ h3 {
     padding-top: 20px;
 }
 
+
 /*~~~~~~~~~~~~~~~
     BUTTONS
 ~~~~~~~~~~~~~~~*/
+.btn {
+    cursor: pointer;
+}
 
+.btn#extraction {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
 
+.awards .btn {
+    padding: 10px 5px;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid gold;
+}
+    
 
 /*~~~~~~~~~~~~~~~
-    GENERAL
+GENERAL
 ~~~~~~~~~~~~~~~*/
 .container {
     max-width: 900px;   
@@ -59,9 +76,12 @@ h3 {
 .d-flex {
     display: flex;
     justify-content: space-around;
+    gap: 30px;
 }
 
-
+body {
+    background-color: green;
+}
 
 /*~~~~~~~~~~~~~~~
 GAME-SETTING
@@ -71,32 +91,57 @@ GAME-SETTING
 /*~~~~~~~~~~~~~~~
 BOARD
 ~~~~~~~~~~~~~~~*/
-.board {
+#board {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    width: 70%;
 }
 
 .cell {
-    background-color: red;
+    width: calc(100% / 10);
+    aspect-ratio: 1/1;
+}
+
+.cell,
+.cell div {
     text-align: center;
     align-content: center;
-    width: calc(100% / 11);
-    height: calc(100% / 11);
-    margin: 3px;
+    border-radius: 50%;
+    
 }
+
+.cell div {
+    color: black;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    font-weight: 900;
+}
+
+.cell > .extracted {
+    color: red;
+    border: 1px solid red;
+    background-color: #FFB2B2;
+    box-shadow: -2px 3px 0px 0px red;
+}
+
 
 /*~~~~~~~~~~~~~~~
 EXTRACTION
 ~~~~~~~~~~~~~~~*/
 .extraction {
     text-align: center;
+    color: goldenrod;
 }
 
 .last-extraction {
-    padding: 30px;
+    padding: 20px;
+    margin: 15px 55px;
     font-size: 32px;
+    font-weight: 900;
+    color: red;
+    background-color: white;
 }
 
 
@@ -111,6 +156,7 @@ AWARDS
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
