@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Tombola!</title>
 </head>
@@ -14,29 +20,29 @@
             <div>    
                 <div class="extraction">
                     <h3>Ultimo numero estratto</h3>
-                    <div class="last-extraction">0</div>
+                    <div id="last-extraction">0</div>
                     <button id="extraction" class="btn">Estrai</button>
                 </div>
                 <div class="awards">
                     <div>
-                        <button id="ambo" class="btn">Ambo</button>
-                        <label for="ambo">premio €</label>
+                        <button id="ambo" class="btn hidden">Ambo</button>
+                        <label for="ambo" class="hidden">premio €</label>
                     </div>
                     <div>
-                        <button id="terna" class="btn">Terna</button>
-                        <label for="terna">premio €</label>
+                        <button id="terna" class="btn hidden">Terna</button>
+                        <label for="terna" class="hidden">premio €</label>
                     </div>
                     <div>
-                        <button id="quaterna" class="btn">Quaterna</button>
-                        <label for="quaterna">premio €</label>
+                        <button id="quaterna" class="btn hidden">Quaterna</button>
+                        <label for="quaterna" class="hidden">premio €</label>
                     </div>
                     <div>
-                        <button id="cinquina" class="btn">Cinquina</button>
-                        <label for="cinquina">premio €</label>
+                        <button id="cinquina" class="btn hidden">Cinquina</button>
+                        <label for="cinquina" class="hidden">premio €</label>
                     </div>
                     <div>
-                        <button id="tombola" class="btn">Tombola!</button>
-                        <label for="tombola">premio €</label>
+                        <button id="tombola" class="btn hidden">Tombola!</button>
+                        <label for="tombola" class="hidden">premio €</label>
                     </div>
                 </div>
             </div>
@@ -44,5 +50,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
